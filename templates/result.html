@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<title>HASIL INPUTAN</title>
+
+<head><h1><center><br/><font color="white" placeholder="firstname"> ABSENSI BERHASIL!!</h1></center>
+   <link rel="stylesheet" href="static/css/style.css">   
+   <body bgcolor ="5283d9"><center>
+      <br/>
+      <br/><table bgcolor="ed98ad" border = 3 width="400">
+         {% for key, value in result.items() %}
+            <tr>
+               <th style="color: white"> {{ key }} </th>
+               <td style="color: white"> {{ value }} </td>
+            </tr>
+         {% endfor %}
+      </table></font><br/><br/>
+      <a href="http://localhost:5000/" target="_blank" style="color: white">SELESAI!</a>
+   </center>
+
+   </body>
+</html>
